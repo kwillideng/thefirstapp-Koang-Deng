@@ -1,0 +1,73 @@
+.examples {
+    padding: 3rem;
+    max-width: 1200px;
+    display: flex;
+    gap: clamp(2rem, 8vw, 4rem);
+}
+
+
+button {
+    background: transparent;
+    border: 10px solid ;
+    border-radius: 1rem;
+    
+}
+
+/* button one */
+
+.button-one {
+    color: #3333;
+}
+
+.button-one .line {
+    transition:
+    y 300ms ease-in 300ms,
+    rotate 300ms ease-in;
+    opacity: 0ms 300ms;
+    ;
+    transform-origin: center;
+    
+}
+
+.button-one:hover .line {
+    transition:
+    y 300ms ease-in,
+    rotate 300ms ease-in 300ms,
+    opacity 0ms 300ms;
+    ;
+   
+}
+
+
+
+.button-one:hover :is(.top, .bottom) {
+    y: 45; 
+}
+
+.button-one:hover .top {
+    rotate: 45deg;
+}
+
+.button-one:hover .middle {
+  opacity: 0;
+}
+
+.button-one:hover .bottom {
+    rotate: -45deg;
+}
+
+/* button two */
+
+.button-two {
+    
+    background: green;
+}
+
+.button-two .line {
+    transition: stroke-daskoffset 1s;
+}
+
+.button-two:hover .line{
+    stroke-dashoffset: 79.9;
+} 
+
